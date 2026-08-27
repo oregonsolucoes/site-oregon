@@ -14,7 +14,7 @@
 
   --radius-sm:  8px;
   --radius-md:  14px;
-  --radius-lg:  22px;
+  --radius-lg:  28px;
   --shadow-sm:  0 2px 8px rgba(0,0,0,0.08);
   --shadow-md:  0 8px 24px rgba(0,0,0,0.10);
   --shadow-lg:  0 20px 60px rgba(0,0,0,0.16);
@@ -85,7 +85,7 @@ img { max-width: 100%; }
 /* ============ BOTÕES ============ */
 .btn {
   font-weight: 600;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-lg);
   transition: var(--transition);
   letter-spacing: 0.3px;
   border: none;
@@ -110,7 +110,7 @@ img { max-width: 100%; }
   color: var(--white) !important;
   padding: 8px 20px;
   font-size: 14px;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-lg);
 }
 
 .btn-whatsapp:hover {
@@ -142,13 +142,13 @@ img { max-width: 100%; }
 }
 
 #mainNav.navbar-scrolled {
-  background: var(--primary-dark);
+  background: linear-gradient(45deg,#302574 40%,#6a50e5);
   padding: 10px 0;
   box-shadow: 0 4px 28px rgba(0, 0, 0, 0.28);
 }
 
 .navbar-brand img {
-  height: 48px;
+  height: 60px;
   width: auto;
   display: block;
 }
@@ -162,7 +162,7 @@ img { max-width: 100%; }
   font-size: 14px;
   font-weight: 500;
   padding: 7px 13px !important;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-lg);
   transition: var(--transition);
 }
 
@@ -205,9 +205,10 @@ img { max-width: 100%; }
   background: linear-gradient(
     135deg,
     rgba(10, 6, 32, 0.92) 0%,
-    rgba(23, 9, 88, 0.78) 50%,
-    rgba(13, 59, 102, 0.62) 100%
+    rgba(23, 9, 88, 0.78) 60%,
+    rgba(255, 152, 101, 0.8) 100%
   );
+  backdrop-filter: blur(5px);
 }
 
 .hero-container {
@@ -258,7 +259,7 @@ img { max-width: 100%; }
 
 .hero-img {
   width: 100%;
-  max-width: 520px;
+  max-width: 640px;
   filter: drop-shadow(0 24px 60px rgba(0,0,0,0.45));
   animation: float 6s ease-in-out infinite;
 }
@@ -455,12 +456,12 @@ img { max-width: 100%; }
 
 .tech-logo--aws {
   filter: brightness(0) invert(1);
-  height: 28px;
+  height: 34px;
 }
 
 .tech-logo--anthropic {
   filter: brightness(0) invert(1);
-  height: 22px;
+  height: 16px;
 }
 
 .tech-logo-text {
@@ -626,7 +627,7 @@ img { max-width: 100%; }
 
 .team-card img {
   flex-shrink: 0;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-lg);
 }
 
 .team-card strong {
@@ -671,6 +672,12 @@ img { max-width: 100%; }
     justify-content: space-between;
     text-align: left;
   }
+}
+
+.footer-brand img {
+  width: 200px;
+  height: auto;
+  display: block;
 }
 
 .footer-tagline {
